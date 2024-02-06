@@ -6,7 +6,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<title>Demoiselles cave</title>
+	<title>Chandelle (Pas de l'Esacalette)</title>
 
 	<link rel="stylesheet" type="text/css" href="./libs/potree/potree.css">
 	<link rel="stylesheet" type="text/css" href="./libs/jquery-ui/jquery-ui.min.css">
@@ -52,7 +52,7 @@
 
 		window.viewer = new Potree.Viewer(document.getElementById("potree_render_area"));
 
-		viewer.setDescription("chandelle-escalette")
+		viewer.setDescription("Chandelle (Pas de l'Esacalette)")
 
 		viewer.useHQ = true
 		viewer.setEDLEnabled(true)
@@ -76,7 +76,7 @@
 			document.getElementById('potree_quick_buttons').hidden = true
 		});
 
-		let url = "./pointclouds/metadata.json"
+		let url = "/pointclouds/metadata.json"
 
 		Potree.loadPointCloud(url).then(e => {
 			let pointcloud = e.pointcloud;
