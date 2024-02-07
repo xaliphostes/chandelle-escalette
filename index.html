@@ -76,7 +76,7 @@
 			document.getElementById('potree_quick_buttons').hidden = true
 		});
 
-		let url = "/pointclouds/metadata.json"
+		let url = "./pointclouds/metadata.json"
 
 		Potree.loadPointCloud(url).then(e => {
 			let pointcloud = e.pointcloud;
